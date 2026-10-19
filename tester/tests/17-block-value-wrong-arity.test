@@ -1,0 +1,13 @@
+*** Manual test imported from 17-block-value-wrong-arity.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 51
+
+class Main : Object {
+run [|
+    b := [ :x | y := x. ].
+    _ := b value.
+]
+}
+

@@ -1,0 +1,12 @@
+*** Manual test imported from 10-assign-to-parameter.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 34
+
+class Main : Object {
+run [|
+    blk := [ :x | x := 10. ].
+]
+}
+

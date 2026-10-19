@@ -1,0 +1,12 @@
+*** Manual test imported from 61-timesrepeat-basic.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class Main : Object {
+run [|
+    x := 3 timesRepeat: [ :i | ret := i. ].
+    _ := (x asString) print.
+]
+}

@@ -1,0 +1,12 @@
+*** Builtin timesRepeat: basic behavior.
++++ control-flow
+>>> 2
+!C! 0
+!I! 0
+
+class Main : Object {
+run [|
+    x := 3 timesRepeat: [ :i | ret := i. ].
+    _ := (x asString) print.
+]
+}

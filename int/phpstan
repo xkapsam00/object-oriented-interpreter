@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+CONFIG_ARGS=()
+CONFIG_FILE="phpstan.neon"
+LOCAL_EXT="vendor/spaze/phpstan-disallowed-calls/extension.neon"
+GLOBAL_EXT="/opt/composer/vendor/spaze/phpstan-disallowed-calls/extension.neon"
+
+if [[ -f "$CONFIG_FILE" && ! -f "$LOCAL_EXT" && -f "$GLOBAL_EXT" ]]; then
+    CONFIG_DIR="$(dirname "$CONFIG_FILE")"
+    TMP_CONFIG="$(mktemp "${CONFIG_DIR}/.phpstan.wrapper.XXXXXX.neon")"
+    sed "s#${LOCAL_EXT}#${GLOBAL_EXT}#g" "$CONFIG_FILE" >"$TMP_CONFIG"
+    CONFIG_ARGS=(-c "$TMP_CONFIG")
+    trap 'rm -f "$TMP_CONFIG"' EXIT
+fi
+
+if [[ $# -eq 0 ]]; then
+    phpstan analyse "${CONFIG_ARGS[@]}"
+    exit 0
+fi
+
+case "$1" in
+analyse|analyze)
+    shift
+    phpstan analyse "${CONFIG_ARGS[@]}" "$@"
+    ;;
+help|list|completion)
+    phpstan "$@"
+    ;;
+*)
+    phpstan analyse "${CONFIG_ARGS[@]}" "$@"
+    ;;
+esac

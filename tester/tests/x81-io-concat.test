@@ -1,0 +1,13 @@
+*** Read input, concatenate suffix, and print.
++++ advanced-io
+>>> 3
+!C! 0
+!I! 0
+
+class Main : Object {
+run [|
+    x := String read.
+    y := x concatenateWith: '-ok'.
+    _ := y print.
+]
+}

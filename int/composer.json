@@ -1,0 +1,23 @@
+{
+    "name": "ipp/interpreter",
+    "type": "project",
+    "config": {
+        "platform": {
+            "php": "8.5"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "IPP\\Interpreter\\": "src/interpreter/"
+        }
+    },
+    "require": {
+        "adhocore/cli": "^1.9",
+        "monolog/monolog": "^3.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^2.1",
+        "spaze/phpstan-disallowed-calls": "^4.3",
+        "squizlabs/php_codesniffer": "^4.0"
+    }
+}

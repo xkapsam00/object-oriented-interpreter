@@ -1,0 +1,16 @@
+*** Manual test imported from 70-cyclic-inheritance.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 35
+
+class A : B {
+}
+
+class B : A {
+}
+
+class Main : Object {
+run [|
+]
+}

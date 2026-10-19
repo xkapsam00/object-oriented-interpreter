@@ -1,0 +1,12 @@
+*** Manual test imported from 57-string-substring.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class Main : Object {
+run [|
+    x := 'abcdef' startsWith: 2 endsBefore: 5.
+    _ := x print.
+]
+}

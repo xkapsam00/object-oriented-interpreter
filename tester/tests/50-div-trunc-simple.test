@@ -1,0 +1,12 @@
+*** Manual test imported from 50-div-trunc-simple.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class Main : Object {
+run [|
+    a := 5 divBy: 2.
+    _ := (a asString) print.
+]
+}

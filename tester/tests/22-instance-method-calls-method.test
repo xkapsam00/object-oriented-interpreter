@@ -1,0 +1,19 @@
+*** Manual test imported from 22-instance-method-calls-method.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class Main : Object {
+run [|
+    z := self outer.
+]
+
+outer [|
+    tmp := self inner.
+]
+
+inner [|
+    value := 1.
+]
+}

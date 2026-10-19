@@ -1,0 +1,13 @@
+*** Manual test imported from 35-string-asinteger-valid.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class Main : Object {
+run [|
+    n := '123' asInteger.
+    s := n asString.
+    _ := s print.
+]
+}

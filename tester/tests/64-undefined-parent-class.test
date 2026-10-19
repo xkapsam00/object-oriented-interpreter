@@ -1,0 +1,13 @@
+*** Manual test imported from 64-undefined-parent-class.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 32
+
+class A : Missing {
+}
+
+class Main : Object {
+run [|
+]
+}

@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -euo pipefail
+export RUFF_CACHE_DIR="${RUFF_CACHE_DIR:-/tmp/ruff_cache}"
+ruff "$@"

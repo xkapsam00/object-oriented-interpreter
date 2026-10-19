@@ -1,0 +1,23 @@
+*** Closures example from spec 1.2.12 (input 1,2,3,4).
++++ spec-examples
+>>> 2
+!C! 0
+!I! 0
+
+class Main : Object {
+giveObjectWithBlock [ |
+x := ((String read) asInteger).
+b := [| y := ((String read) asInteger) plus: x. ].
+x := 7.
+z := ((Object new) block: b).
+x := 9.
+_ := z.
+]
+run [ |
+o := self giveObjectWithBlock.
+_ := String read.
+r1 := ((o block) value).
+r2 := ((o block) value).
+]
+}
+

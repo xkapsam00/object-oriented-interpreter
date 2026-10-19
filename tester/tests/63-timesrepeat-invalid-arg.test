@@ -1,0 +1,11 @@
+*** Manual test imported from 63-timesrepeat-invalid-arg.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 51
+
+class Main : Object {
+run [|
+    x := 2 timesRepeat: [| ret := nil. ].
+]
+}

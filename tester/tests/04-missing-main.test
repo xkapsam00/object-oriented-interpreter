@@ -1,0 +1,12 @@
+*** Manual test imported from 04-missing-main.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 31
+
+class Helper : Object {
+run [|
+    a := 1.
+]
+}
+

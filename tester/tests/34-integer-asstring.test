@@ -1,0 +1,12 @@
+*** Manual test imported from 34-integer-asstring.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class Main : Object {
+run [|
+    s := 123 asString.
+    _ := s print.
+]
+}

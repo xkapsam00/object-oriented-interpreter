@@ -1,0 +1,11 @@
+*** Manual test imported from 75-missing-attribute-read.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 51
+
+class Main : Object {
+run [|
+    x := self missingAttr.
+]
+}

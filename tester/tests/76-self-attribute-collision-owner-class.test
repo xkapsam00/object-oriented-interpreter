@@ -1,0 +1,21 @@
+*** Manual test imported from 76-self-attribute-collision-owner-class.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class A : Object {
+setFoo [|
+    _ := self foo: 1.
+    _ := ((super foo) asString) print.
+]
+}
+
+class Main : A {
+run [|
+    _ := self setFoo.
+]
+
+foo [|
+]
+}

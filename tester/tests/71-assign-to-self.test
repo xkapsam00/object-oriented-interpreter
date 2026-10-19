@@ -1,0 +1,11 @@
+*** Manual test imported from 71-assign-to-self.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 35
+
+class Main : Object {
+run [|
+    self := 1.
+]
+}

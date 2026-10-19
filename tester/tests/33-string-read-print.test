@@ -1,0 +1,12 @@
+*** Manual test imported from 33-string-read-print.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class Main : Object {
+run [|
+    x := String read.
+    _ := x print.
+]
+}

@@ -1,0 +1,13 @@
+*** Manual test imported from 37-identical-self.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class Main : Object {
+run [|
+    b := self identicalTo: self.
+    s := b asString.
+    _ := s print.
+]
+}

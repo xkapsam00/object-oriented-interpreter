@@ -1,0 +1,14 @@
+*** Manual test imported from 46-multiply-div.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class Main : Object {
+run [|
+    a := 6 multiplyBy: 7.
+    _ := (a asString) print.
+    b := a divBy: 2.
+    _ := (b asString) print.
+]
+}

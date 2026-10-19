@@ -1,0 +1,11 @@
+*** Division by zero should fail at runtime.
++++ runtime-errors
+>>> 2
+!C! 0
+!I! 53
+
+class Main : Object {
+run [|
+    x := 10 divBy: 0.
+]
+}

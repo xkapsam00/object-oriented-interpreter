@@ -1,0 +1,12 @@
+*** Manual test imported from 53-whiletrue-no-iteration.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class Main : Object {
+run [|
+    x := [| ret := false. ] whileTrue: [| _ := 'BAD' print. ].
+    _ := (x asString) print.
+]
+}

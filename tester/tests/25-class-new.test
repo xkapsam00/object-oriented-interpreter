@@ -1,0 +1,14 @@
+*** Manual test imported from 25-class-new.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class A : Object {
+}
+
+class Main : Object {
+run [|
+    a := A new.
+]
+}

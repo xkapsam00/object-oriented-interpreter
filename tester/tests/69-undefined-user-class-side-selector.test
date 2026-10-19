@@ -1,0 +1,16 @@
+*** Manual test imported from 69-undefined-user-class-side-selector.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 32
+
+class Helper : Object {
+foo [|
+]
+}
+
+class Main : Object {
+run [|
+    x := Helper read.
+]
+}

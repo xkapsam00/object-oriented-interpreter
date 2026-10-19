@@ -1,0 +1,14 @@
+*** Manual test imported from 45-plus-minus.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class Main : Object {
+run [|
+    a := 10 plus: 5.
+    _ := (a asString) print.
+    b := a minus: 3.
+    _ := (b asString) print.
+]
+}

@@ -1,0 +1,11 @@
+*** Undefined variable should fail static semantics.
++++ semantics
+>>> 1
+!C! 0
+!I! 32
+
+class Main : Object {
+run [|
+    b := a.
+]
+}

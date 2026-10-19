@@ -1,0 +1,13 @@
+*** Manual test imported from 36-string-asinteger-invalid.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class Main : Object {
+run [|
+    x := 'abc' asInteger.
+    s := x asString.
+    _ := s print.
+]
+}

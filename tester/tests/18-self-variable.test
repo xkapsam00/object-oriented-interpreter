@@ -1,0 +1,12 @@
+*** Manual test imported from 18-self-variable.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class Main : Object {
+run [|
+    x := self.
+]
+}
+

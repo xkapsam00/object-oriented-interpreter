@@ -1,0 +1,13 @@
+*** Manual test imported from 19-self-in-nested-block.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class Main : Object {
+run [|
+    b := [| x := self. ].
+    _ := b value.
+]
+}
+

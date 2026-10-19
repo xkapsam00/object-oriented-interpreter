@@ -1,0 +1,12 @@
+*** Manual test imported from 12-block-literal-with-params.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class Main : Object {
+run [|
+    b := [ :x :y | z := x. ].
+]
+}
+

@@ -1,0 +1,12 @@
+*** Manual test imported from 55-string-concatenate.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class Main : Object {
+run [|
+    x := 'ahoj' concatenateWith: 'svete'.
+    _ := x print.
+]
+}

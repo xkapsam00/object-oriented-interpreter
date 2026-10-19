@@ -1,0 +1,15 @@
+*** Manual test imported from 20-instance-method-no-args.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class Main : Object {
+run [|
+    x := self identity.
+]
+
+identity [|
+    result := self.
+]
+}

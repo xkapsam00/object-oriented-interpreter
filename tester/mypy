@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -euo pipefail
+export MYPY_CACHE_DIR="${MYPY_CACHE_DIR:-/tmp/mypy_cache}"
+mypy "$@"

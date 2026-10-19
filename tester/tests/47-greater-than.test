@@ -1,0 +1,14 @@
+*** Manual test imported from 47-greater-than.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class Main : Object {
+run [|
+    a := 5 greaterThan: 2.
+    _ := (a asString) print.
+    b := 1 greaterThan: 4.
+    _ := (b asString) print.
+]
+}

@@ -1,0 +1,28 @@
+*** Execute-only XML test: wrong method arity at runtime.
++++ xml-execute-only
+>>> 2
+!I! 51
+
+<program language="SOL26">
+  <class name="Main" parent="Object">
+    <method selector="run">
+      <block arity="0">
+        <assign order="1">
+          <var name="x"/>
+          <expr>
+            <send selector="foo:">
+              <expr>
+                <var name="self"/>
+              </expr>
+            </send>
+          </expr>
+        </assign>
+      </block>
+    </method>
+    <method selector="foo:">
+      <block arity="1">
+        <parameter name="arg" order="1"/>
+      </block>
+    </method>
+  </class>
+</program>

@@ -1,0 +1,14 @@
+*** Manual test imported from 39-is-predicates.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class Main : Object {
+run [|
+    _ := ((1 isNumber) asString) print.
+    _ := (('abc' isString) asString) print.
+    _ := ((nil isNil) asString) print.
+    _ := (([|] isBlock) asString) print.
+]
+}

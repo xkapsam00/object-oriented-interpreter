@@ -1,0 +1,14 @@
+*** Manual test imported from 44-and-or-eval.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class Main : Object {
+run [|
+    a := true and: [| x := true. ].
+    _ := (a asString) print.
+    b := false or: [| x := true. ].
+    _ := (b asString) print.
+]
+}

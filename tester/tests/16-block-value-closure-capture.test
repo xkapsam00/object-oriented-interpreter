@@ -1,0 +1,14 @@
+*** Manual test imported from 16-block-value-closure-capture.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class Main : Object {
+run [|
+    a := 7.
+    b := [| x := a. ].
+    _ := b value.
+]
+}
+

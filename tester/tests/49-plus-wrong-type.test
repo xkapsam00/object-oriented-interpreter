@@ -1,0 +1,11 @@
+*** Manual test imported from 49-plus-wrong-type.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 52
+
+class Main : Object {
+run [|
+    x := 1 plus: 'a'.
+]
+}

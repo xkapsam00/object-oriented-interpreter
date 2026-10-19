@@ -1,0 +1,11 @@
+*** Manual test imported from 68-undefined-class-reference-in-send-arg.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 32
+
+class Main : Object {
+run [|
+    x := Object from: Missing.
+]
+}

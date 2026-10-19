@@ -1,0 +1,12 @@
+*** Manual test imported from 03-undefined-variable.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 32
+
+class Main : Object {
+run [|
+    b := a.
+]
+}
+

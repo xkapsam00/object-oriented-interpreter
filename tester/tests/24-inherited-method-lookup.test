@@ -1,0 +1,17 @@
+*** Manual test imported from 24-inherited-method-lookup.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class Base : Object {
+answer [|
+    value := 1.
+]
+}
+
+class Main : Base {
+run [|
+    x := self answer.
+]
+}

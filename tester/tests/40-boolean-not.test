@@ -1,0 +1,12 @@
+*** Manual test imported from 40-boolean-not.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class Main : Object {
+run [|
+    _ := ((false not) asString) print.
+    _ := ((true not) asString) print.
+]
+}

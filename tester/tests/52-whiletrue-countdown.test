@@ -1,0 +1,18 @@
+*** Manual test imported from 52-whiletrue-countdown.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class Main : Object {
+run [|
+    _ := self n: 3.
+    _ := [|
+        current := self n.
+        ret := current greaterThan: 0.
+    ] whileTrue: [|
+        _ := ((self n) asString) print.
+        _ := self n: ((self n) minus: 1).
+    ].
+]
+}

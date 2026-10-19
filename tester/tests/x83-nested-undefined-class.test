@@ -1,0 +1,14 @@
+*** Nested block contains undefined class reference.
++++ advanced-semantics
+>>> 3
+!C! 0
+!I! 32
+
+class Main : Object {
+run [|
+    b := [|
+        x := Missing new.
+    ].
+    _ := b value.
+]
+}

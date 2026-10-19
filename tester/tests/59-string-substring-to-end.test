@@ -1,0 +1,12 @@
+*** Manual test imported from 59-string-substring-to-end.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class Main : Object {
+run [|
+    x := 'abcdef' startsWith: 3 endsBefore: 99.
+    _ := x print.
+]
+}

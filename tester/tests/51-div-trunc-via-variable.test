@@ -1,0 +1,13 @@
+*** Manual test imported from 51-div-trunc-via-variable.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class Main : Object {
+run [|
+    x := 9 multiplyBy: 3.
+    y := x divBy: 4.
+    _ := (y asString) print.
+]
+}

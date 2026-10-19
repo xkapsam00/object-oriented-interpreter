@@ -1,0 +1,12 @@
+*** Manual test imported from 58-string-substring-invalid.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class Main : Object {
+run [|
+    x := 'abcdef' startsWith: 0 endsBefore: 3.
+    _ := (x asString) print.
+]
+}

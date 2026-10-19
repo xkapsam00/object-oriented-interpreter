@@ -1,0 +1,16 @@
+*** Cyclic inheritance should fail static checks.
++++ semantics
+>>> 2
+!C! 0
+!I! 35
+
+class A : B {
+}
+
+class B : A {
+}
+
+class Main : Object {
+run [|
+]
+}

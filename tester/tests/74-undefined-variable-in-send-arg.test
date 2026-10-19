@@ -1,0 +1,12 @@
+*** Manual test imported from 74-undefined-variable-in-send-arg.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 32
+
+class Main : Object {
+run [|
+    x := Object from: y.
+    y := Object new.
+]
+}

@@ -1,0 +1,18 @@
+*** Countdown with whileTrue: loop.
++++ control-flow
+>>> 3
+!C! 0
+!I! 0
+
+class Main : Object {
+run [|
+    _ := self n: 3.
+    _ := [|
+        current := self n.
+        ret := current greaterThan: 0.
+    ] whileTrue: [|
+        _ := ((self n) asString) print.
+        _ := self n: ((self n) minus: 1).
+    ].
+]
+}

@@ -1,0 +1,16 @@
+*** Manual test imported from 08-method-arity-mismatch.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 33
+
+class Main : Object {
+run [|
+    a := 1.
+]
+
+foo: [|
+    b := 2.
+]
+}
+

@@ -1,0 +1,11 @@
+*** Missing attribute read should trigger DNU-like runtime error.
++++ runtime-errors
+>>> 2
+!C! 0
+!I! 51
+
+class Main : Object {
+run [|
+    x := self missingAttr.
+]
+}

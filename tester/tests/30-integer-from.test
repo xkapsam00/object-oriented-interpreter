@@ -1,0 +1,11 @@
+*** Manual test imported from 30-integer-from.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class Main : Object {
+run [|
+    i := Integer from: 1.
+]
+}

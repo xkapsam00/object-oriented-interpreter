@@ -1,0 +1,13 @@
+*** Manual test imported from 67-undefined-class-reference-in-nested-block.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 32
+
+class Main : Object {
+run [|
+    b := [|
+        x := Missing.
+    ].
+]
+}

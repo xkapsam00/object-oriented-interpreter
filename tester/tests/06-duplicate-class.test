@@ -1,0 +1,18 @@
+*** Manual test imported from 06-duplicate-class.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 35
+
+class Main : Object {
+run [|
+    a := 1.
+]
+}
+
+class Main : Object {
+foo [|
+    b := 2.
+]
+}
+

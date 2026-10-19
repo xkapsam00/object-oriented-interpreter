@@ -1,0 +1,22 @@
+*** Manual test imported from 77-super-attribute-collision-parent-class.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class A : Object {
+}
+
+class Main : A {
+run [|
+    _ := self setViaSuper.
+]
+
+setViaSuper [|
+    _ := super foo: 1.
+    _ := ((super foo) asString) print.
+]
+
+foo [|
+]
+}

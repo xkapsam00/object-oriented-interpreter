@@ -1,0 +1,16 @@
+*** Manual test imported from 27-attribute-set-get.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class A : Object {
+}
+
+class Main : Object {
+run [|
+    a := A new.
+    _ := a someAttr: 'hello'.
+    x := a someAttr.
+]
+}

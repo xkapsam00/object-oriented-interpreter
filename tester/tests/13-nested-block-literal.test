@@ -1,0 +1,14 @@
+*** Manual test imported from 13-nested-block-literal.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class Main : Object {
+run [|
+    outer := [ :x |
+        inner := [| y := x. ].
+    ].
+]
+}
+

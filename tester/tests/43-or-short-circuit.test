@@ -1,0 +1,12 @@
+*** Manual test imported from 43-or-short-circuit.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class Main : Object {
+run [|
+    a := true or: [| _ := 'BAD' print. ].
+    _ := (a asString) print.
+]
+}

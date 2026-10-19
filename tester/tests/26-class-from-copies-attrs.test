@@ -1,0 +1,17 @@
+*** Manual test imported from 26-class-from-copies-attrs.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class A : Object {
+}
+
+class Main : Object {
+run [|
+    a := A new.
+    _ := a value: 1.
+    b := A from: a.
+    x := b value.
+]
+}

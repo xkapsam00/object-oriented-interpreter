@@ -1,0 +1,24 @@
+*** Manual test imported from 29-super-dispatch.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class A : Object {
+greet [|
+    x := 1.
+]
+}
+
+class B : A {
+greet [|
+    x := super greet.
+]
+}
+
+class Main : Object {
+run [|
+    b := B new.
+    _ := b greet.
+]
+}

@@ -1,0 +1,11 @@
+*** Manual test imported from 23-unknown-instance-selector.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 51
+
+class Main : Object {
+run [|
+    x := self doesNotExist.
+]
+}

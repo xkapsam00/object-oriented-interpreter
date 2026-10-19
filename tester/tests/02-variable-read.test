@@ -1,0 +1,13 @@
+*** Manual test imported from 02-variable-read.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class Main : Object {
+run [|
+    a := 1.
+    b := a.
+]
+}
+

@@ -1,0 +1,12 @@
+*** Manual test imported from 56-string-concatenate-invalid.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class Main : Object {
+run [|
+    x := 'ahoj' concatenateWith: 1.
+    _ := (x asString) print.
+]
+}

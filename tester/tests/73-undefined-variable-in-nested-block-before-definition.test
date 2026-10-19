@@ -1,0 +1,14 @@
+*** Manual test imported from 73-undefined-variable-in-nested-block-before-definition.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 32
+
+class Main : Object {
+run [|
+    b := [|
+        x := y.
+    ].
+    y := 1.
+]
+}

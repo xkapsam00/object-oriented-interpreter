@@ -1,0 +1,11 @@
+*** Manual test imported from 54-whiletrue-nonboolean-condition.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 52
+
+class Main : Object {
+run [|
+    _ := [| ret := 1. ] whileTrue: [| _ := 'BAD' print. ].
+]
+}

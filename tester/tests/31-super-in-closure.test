@@ -1,0 +1,25 @@
+*** Manual test imported from 31-super-in-closure.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class A : Object {
+greet [|
+    x := 1.
+]
+}
+
+class B : A {
+makeBlock [|
+    b := [| x := super greet. ].
+]
+}
+
+class Main : Object {
+run [|
+    obj := B new.
+    blk := obj makeBlock.
+    _ := blk value.
+]
+}

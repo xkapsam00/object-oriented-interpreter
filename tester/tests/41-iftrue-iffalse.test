@@ -1,0 +1,14 @@
+*** Manual test imported from 41-iftrue-iffalse.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class Main : Object {
+run [|
+    a := true ifTrue: [| x := 'then'. ] ifFalse: [| x := 'bad'. ].
+    _ := a print.
+    b := false ifTrue: [| x := 'bad'. ] ifFalse: [| x := 'else'. ].
+    _ := b print.
+]
+}

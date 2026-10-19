@@ -1,0 +1,14 @@
+*** Manual test imported from 28-attribute-method-collision.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 54
+
+class Main : Object {
+run [|
+    _ := self foo: 10.
+]
+
+foo [|
+]
+}

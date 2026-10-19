@@ -1,0 +1,12 @@
+*** Arithmetic chain with nested sends and print.
++++ advanced-runtime
+>>> 3
+!C! 0
+!I! 0
+
+class Main : Object {
+run [|
+    x := ((10 minus: 3) multiplyBy: 2).
+    _ := (x asString) print.
+]
+}

@@ -1,0 +1,13 @@
+*** Manual test imported from 15-block-value-with-arg.sol.
++++ manual
+>>> 1
+!C! 0
+!I! 0
+
+class Main : Object {
+run [|
+    b := [ :x | y := x. ].
+    _ := b value: 1.
+]
+}
+

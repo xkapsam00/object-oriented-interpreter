@@ -1,0 +1,12 @@
+*** Boolean short-circuit example from spec section 2.
++++ spec-examples
+>>> 2
+!C! 0
+!I! 0
+
+class Main : Object {
+run [|
+y := (true and: [| _ := false isBoolean. ]) or: [| _ := nil error. ].
+_ := (y asString) print.
+]
+}
